@@ -1,6 +1,6 @@
-# TO DO TASK LIST MVC | Python | Django Framework | [![Build Status](https://travis-ci.org/mkbhatt/TO-DO-TASK-LIST-MVC-Python-Django.svg?branch=master)](https://travis-ci.org/mkbhatt/TO-DO-TASK-LIST-MVC-Python-Django)
+# To Do Task List MVC | Python | Django Framework | [![Build Status](https://travis-ci.org/mkbhatt/TO-DO-TASK-LIST-MVC-Python-Django.svg?branch=master)](https://travis-ci.org/mkbhatt/TO-DO-TASK-LIST-MVC-Python-Django)
 
-A MVC Python Django TO DO TASK LIST Sample Application Built On Django Framework
+To Do Task List MVC Sample Application Built On Python Django Framework
 
 ## This Sample App Is Useful For Following People
 
