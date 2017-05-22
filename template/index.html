@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    {% load static from staticfiles %}
+
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/appstyle.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/alertify.css' %}" type="text/css" id="alertifyCSS">
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript">
+        var loader = '<div id="loader" style="margin-top:30px;" ><img src="{% static "img/loader.gif" %}" alt="loader" />Loading...</div>';
+    </script>
+
+    <title>Task List Sample App</title>
+
+</head>
+
+<body>
+
+    <!-- Container -->
+    <div class="container">
+
+        <center>
+            <h3>Task List Sample App</h3>
+        </center>
+
+        <br>
+        <p><strong>**Hover Around Rectangle With Grey Area & Click On Task Title To View / Add Comments</strong>
+        </p>
+
+        <div style="margin-top:5%;">
+
+            <div class="row">
+
+                <div class="col-xs-12 col-md-12">
+                    <div class="comment_container">
+                        <div class="comment_box">
+                            <div class="c_inlinebox"><strong>You Have Not Selected Any Task, Please Select A Task From Left To View Related Comments !</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- Task Modal -->
+        <div class="modal fade" id="task_modal" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Add New Task</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            <input type="text" id="new_task" placeholder="Enter New Task Name" />
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" onclick="new_task()" data-dismiss="modal">Save</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="{% static 'js/taskapp.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/moment.js' %}"></script>
+    <script src="{% static 'js/alertify.js' %}"></script>
+
+</body>
+
+</html>
