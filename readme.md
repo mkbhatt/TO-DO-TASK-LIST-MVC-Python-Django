@@ -19,6 +19,7 @@ To Do Task List MVC Sample Application Built On Python Django Framework
 * MVC Code
 * Model Code
 * ORM & SQL Queries
+* Toast Notification
 
 ### Prerequisites
 
